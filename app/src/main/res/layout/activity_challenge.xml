@@ -6,4 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".ChallengeActivity">
 
+    <fragment
+        android:id="@+id/drag1"
+        android:name="nl.cubo.cubo.challenge.DragDropFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <fragment
+        android:id="@+id/drag2"
+        android:name="nl.cubo.cubo.challenge.DragDropFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drag1" />
+
+    <fragment
+        android:id="@+id/drag3"
+        android:name="nl.cubo.cubo.challenge.DragDropFragment"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drag2" />
+
+    <fragment
+        android:id="@+id/drag4"
+        android:name="nl.cubo.cubo.challenge.DragDropFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drag3" />
+
+    <fragment
+        android:id="@+id/drag5"
+        android:name="nl.cubo.cubo.challenge.DragDropFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drag4" />
 </android.support.constraint.ConstraintLayout>
