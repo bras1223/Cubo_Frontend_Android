@@ -89,6 +89,11 @@ public class HomeActivity extends AppCompatActivity implements DragDropFragment.
             this.currentNumber = 1;
             for(DragDropFragment f :fragments) {
                 f.resetState(sequence[f.getNumber() - 1 ]);
+                if(f.getNumber() == 1) {
+                    f.setActive(true);
+                } else {
+                    f.setActive(false);
+                }
             }
         }
     }
