@@ -3,6 +3,7 @@ package nl.cubo.cubo;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Window;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -21,6 +22,7 @@ public class HomeActivity extends AppCompatActivity implements DragDropFragment.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide(); //<< this
 
         setContentView(R.layout.activity_home);
         timer = findViewById(R.id.textTimer);
